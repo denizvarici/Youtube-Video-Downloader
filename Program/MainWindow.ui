@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Youtube Downloader</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>assets/free-youtube-logo-icon-2431-thumb.png</normaloff>assets/free-youtube-logo-icon-2431-thumb.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="FilePathBox">
+     <item>
+      <widget class="QLabel" name="lblOutput">
+       <property name="text">
+        <string>Çıktı Yolu : </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="tbxOutput"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSearch">
+       <property name="text">
+        <string>Gözat</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="UrlBox">
+     <item>
+      <widget class="QLabel" name="lblUrl">
+       <property name="text">
+        <string>Video URL :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="tbxUrl"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>170</y>
+      <width>299</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="RecordTypeBox">
+     <item>
+      <widget class="QRadioButton" name="radioBtnMP3">
+       <property name="text">
+        <string>MP3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBtnMP4">
+       <property name="text">
+        <string>MP4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDownload">
+       <property name="text">
+        <string>İndir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-20</y>
+      <width>151</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>assets/673518.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="QualityWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="QualityBox">
+      <item>
+       <widget class="QLabel" name="lblQuality">
+        <property name="text">
+         <string>Video Kalitesi :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbxQuality">
+        <item>
+         <property name="text">
+          <string>360p</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>480p</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>720p</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1080p</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Deniz Varıcı</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>772</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tbxUrl</tabstop>
+  <tabstop>tbxOutput</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>btnDownload</tabstop>
+  <tabstop>radioBtnMP3</tabstop>
+  <tabstop>radioBtnMP4</tabstop>
+  <tabstop>cbxQuality</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
